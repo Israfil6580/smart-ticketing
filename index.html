@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel with - PH Paribahan</title>
+
+    <!-- daisy ui CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- inter font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <!-- raleway font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- roboto font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .font-inter {
+            font-family: "Inter", sans-serif;
+        }
+
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+
+        .font-raleway {
+            font-family: "Raleway", sans-serif;
+        }
+
+        .font-default {
+            color: #030712 !important;
+        }
+
+        .bg-green {
+            background-color: #1DD100 !important;
+        }
+
+        .text-green {
+            color: #1DD100 !important;
+        }
+
+        .banner {
+            border-radius: 32px;
+            background: linear-gradient(180deg, rgba(3, 7, 18, 0.50) 0%, rgba(3, 7, 18, 0.00) 100%), url(./images/banner.png);
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="container mx-auto font-raleway md:pt-6">
+
+        <!-- navbar -->
+        <div class="navbar bg-base-100 mb-9">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+
+                <!-- logo -->
+
+                <a class="btn btn-ghost text-3xl md:text-[34px] font-extrabold font-default p-0">P-Ticket</a>
+
+                <!-- logo . -->
+
+            </div>
+
+            <!-- middle nav -->
+
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="font-medium text-[rgba(3,7,18,0.70)] text-[18px]">Home</a></li>
+                    <li><a class="font-medium text-[rgba(3,7,18,0.70)] text-[18px]">About</a></li>
+                    <li><a class="font-medium text-[rgba(3,7,18,0.70)] text-[18px]">Destination</a></li>
+                    <li><a class="font-medium text-[rgba(3,7,18,0.70)] text-[18px]">Search</a></li>
+                </ul>
+            </div>
+
+            <!-- middle nav . -->
+
+            <!-- nav btn -->
+            <div class="navbar-end">
+                <a class="btn font-bold text-xl text-green rounded-xl border-[#1DD10066] bg-[#1DD1001A]">Bus <img
+                        class="h-6 w-6" src="./images/bus-icon.svg" alt=""> </a>
+            </div>
+            <!-- nav btn . -->
+
+        </div>
+        <!-- navbar . -->
+        <!-- banner section -->
+
+        <section class=" h-[480px] lg:h-[500px] xl:h-[700px] w-full font-raleway">
+            <div class="h-full banner pt-32 bg-no-repeat bg-center bg-cover text-center">
+                <h1 class="text-7xl font-extrabold lg:leading-[86px] text-white lg:pb-4">End-to-End Travel with <br>
+                    <span class="text-green">PH Paribahan</span>
+                </h1>
+                <p class="text-lg font-inter lg:leading-[30px] text-white pb-8 lg:w-2/4 lg:mx-auto">Yes, you can run
+                    unit tests and view the results directly within the app. The integrated testing features allow for a
+                    streamlined .</p>
+                <a href="#buy-tickets" class="btn bg-green font-bold text-xl font-default border-[#1DD100]">Buy
+                    Tickets</a>
+            </div>
+
+            <div class="flex gap-16 justify-center relative -top-20">
+                <div class="flex gap-4 p-8 border-b-4 border-[#1DD100] rounded-2xl w-1/4 bg-white">
+                    <div>
+                        <img src="./images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-default text-4xl font-inter font-bold pb-2">500k</h1>
+                        <p class="text-lg text-[#03071299]">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-8 border-b-4 border-[#1DD100] rounded-2xl w-1/4 bg-white">
+                    <div>
+                        <img src="./images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-default text-4xl font-inter font-bold pb-2">1.7 lacks</h1>
+                        <p class="text-lg text-[#03071299]">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex gap-4 p-8 border-b-4 border-[#1DD100] rounded-2xl w-1/4 bg-white">
+                    <div>
+                        <img src="./images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-default text-4xl font-inter font-bold pb-2">80K+</h1>
+                        <p class="text-lg text-[#03071299]">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </header>
+
+    <!-- best offer -->
+
+    <main class="lg:pt-48 font-raleway">
+        <section class="lg:mb-32 container mx-auto">
+            <h1 class="text-4xl font-bold font-default pb-12 text-center">Best offers for you</h1>
+            <!-- left side part -->
+            <div class="flex gap-6">
+                <div class="flex bg-[#FFBF0F] rounded-3xl w-2/4 p-14 justify-around items-center relative">
+                    <div>
+                        <h2 class="text-[40px] font-black leading-9 font-inter font-default pb-2">15% OFF</h2>
+                        <p class="leading-9 font-inter font-default text-[20px] font-semibold pb-2">on your next
+                            purchase</p>
+                        <p class="leading-9 font-inter text-lg font-medium text-[#0307127F]">use by January 2024</p>
+                    </div>
+                    <img class="absolute h-full right-80" src="./images/cupon-devider.png" alt="">
+                    <div>
+                        <h2 class="font-default text-[32px] font-bold lg:leading-[180%]">NEW15</h2>
+                        <p class="text-[20px] font-medium leading-[180%] text-[#03071262]">Coupon Code</p>
+                    </div>
+                </div>
+                <!-- right side part -->
+                <div class="flex bg-[#F78C9C] rounded-3xl w-2/4 p-14 justify-around items-center relative">
+                    <div>
+                        <h2 class="text-[40px] font-black leading-9 font-inter font-default pb-2">20% OFF</h2>
+                        <p class="leading-9 font-inter font-default text-[20px] font-semibold pb-2">on your next
+                            purchase</p>
+                        <p class="leading-9 font-inter text-lg font-medium text-[#0307127F]">use by January 2024</p>
+                    </div>
+                    <img class="absolute h-full right-80" src="./images/cupon-devider.png" alt="">
+                    <div>
+                        <h2 class="font-default text-[32px] font-bold lg:leading-[180%]">Couple 20</h2>
+                        <p class="text-[20px] font-medium leading-[180%] text-[#03071262]">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <!-- see all offers -->
+            <button class="btn btn-outline btn-warning mt-16 text-[20px] font-bold block mx-auto">See All
+                Offers</button>
+        </section>
+
+
+        <section id="buy-tickets"
+            class="bg-[#F7F8F8] rounded-t-[88px] rounded-tr-[88px] border-t-4 border-[#1DD100] lg:pb-28">
+            <div class="container mx-auto pt-32 pb-6">
+                <h1 class="text-[40px] font-bold font-default text-center lg:pb-6">P.H Paribahan</h1>
+                <p class="font-inter text-lg text-[#03071299] lg:leading-[30px] lg:pb-12 text-center lg:w-2/4 mx-auto">
+                    Yes, you can run unit tests and view the results directly within the app. The integrated testing
+                    features allow for a streamlined .</p>
+
+                <div class="flex bg-white justify-around rounded-3xl">
+                    <div class="lg:w-3/4 p-8">
+                        <div class="flex items-center justify-between ">
+                            <div class="flex items-center gap-4">
+                                <img src="./images/bus-logo.png" alt="">
+                                <div>
+                                    <h1 class="text-[32px] font-bold">Greenline Paribahan</h1>
+                                    <p class="text-[#03071299] font-inter text-lg">Coach-009-WEB ! AC_Business</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div
+                                    class="flex items-center justify-center gap-2 w-[180px] h-[56px] bg-[#1DD10026] text-green rounded-xl">
+                                    <img src="./images/seat-green.png" alt="">
+                                    <p class="font-medium text-lg text-green font-inter"> <span>40</span> Seats left</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-[#F7F8F8] rounded-[32px] p-8 mt-6">
+                            <div class="flex justify-between border-b-2 border-dashed pb-6">
+                                <p class="text-lg font-semibold">Route</p>
+                                <p class="text-lg font-semibold">Dhaka - Sylhet</p>
+                            </div>
+                            <div class="flex justify-between border-b-2 border-dashed py-6">
+                                <p class="text-lg font-semibold">Departure Time</p>
+                                <p class="text-lg font-semibold">9:00 PM</p>
+                            </div>
+                            <div class="flex gap-6 pt-6">
+                                <div class="bg-[#0307120D] p-5 w-1/3 rounded-xl">
+                                    <p class="font-medium font-inter text-base">Boarding Point - Laxmipur</p>
+                                </div>
+                                <div class="bg-[#0307120D] p-5 w-1/3 rounded-xl">
+                                    <p class="font-medium font-inter text-base">Dropping Point - Bogura</p>
+                                </div>
+                                <div class="bg-[#0307120D] p-5 w-1/3 rounded-xl">
+                                    <p class="font-medium font-inter text-base">Est. Time - 11 Hour</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/info-devider.png" alt="">
+                    <div class="lg: w-1/4 flex flex-col items-center justify-center">
+                        <img src="./images/fare.png" alt="">
+                        <h2 class="text-[32px] font-bold leading-10 font-default">550 Taka</h2>
+                        <p class="text-2xl font-semibold leading-10 text-[#03071299]">Per Seat</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex container mx-auto bg-white rounded-3xl">
+                <div class="w-[60%] p-8">
+
+                    <p class="text-2xl font-semibold pb-6 border-b-2 border-dashed">Select Your Seat</p>
+                    <div class="flex justify-between py-4 border-b-2 border-dashed">
+                        <div class="flex gap-2">
+                            <img src="./images/seat-gray.png" alt="">
+                            <p class="text-lg font-medium font-inter text-[#03071280]">Available</p>
+                        </div>
+                        <div class="flex gap-2">
+                            <img src="./images/seat-green-filled.png" alt="">
+                            <p class="text-lg font-medium font-inter text-green">Selected</p>
+                        </div>
+                    </div>
+
+                    <!-- keyboard -->
+
+
+
+                    <div class="grid grid-cols-6 grid-rows-11 gap-4 pt-6" id="busSeat">
+                        <div class="col-start-6 bg-[#0307121A] rounded-xl"><img class="block mx-auto p-3"
+                                src="./images/wheel.svg" alt=""></div>
+                        <div
+                            class="row-start-2 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            A</div>
+                        <button
+                            class="row-start-2 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="A1">A1</button>
+                        <button
+                            class="row-start-2 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="A2">A2</button>
+                        <button
+                            class="col-start-5 p-4 text-center bg-[#F7F8F8] row-start-2 font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="A3">A3</button>
+                        <button
+                            class="col-start-6 p-4 text-center bg-[#F7F8F8] row-start-2 font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="A4">A4</button>
+                        <div
+                            class="row-start-3 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            B</div>
+                        <button
+                            class="row-start-3 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="B1">B1</button>
+                        <button
+                            class="row-start-3 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="B2">B2</button>
+                        <button
+                            class="col-start-5 row-start-3 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="B3">B3</button>
+                        <button
+                            class="col-start-6 row-start-3 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="B4">B4</button>
+                        <div
+                            class="row-start-4 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            C</div>
+                        <button
+                            class="row-start-4 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="C1">C1</button>
+                        <button
+                            class="row-start-4 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="C2">C2</button>
+                        <button
+                            class="col-start-5 row-start-4 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="C3">C3</button>
+                        <button
+                            class="col-start-6 row-start-4 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="C4">C4</button>
+                        <div
+                            class="row-start-5 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            D</div>
+                        <button
+                            class="row-start-5 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="D1">D1</button>
+                        <button
+                            class="row-start-5 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="D2">D2</button>
+                        <button
+                            class="col-start-5 row-start-5 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="D3">D3</button>
+                        <button
+                            class="col-start-6 row-start-5 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="D4">D4</button>
+                        <div
+                            class="row-start-6 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            E</div>
+                        <button
+                            class="row-start-6 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="E1">E1</button>
+                        <button
+                            class="row-start-6 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="E2">E2</button>
+                        <button
+                            class="col-start-5 row-start-6 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="E3">E3</button>
+                        <button
+                            class="col-start-6 row-start-6 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="E4">E4</button>
+                        <div
+                            class="row-start-7 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            F</div>
+                        <button
+                            class="row-start-7 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="F1">F1</button>
+                        <button
+                            class="row-start-7 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="F2">F2</button>
+                        <button
+                            class="col-start-5 row-start-7 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="F3">F3</button>
+                        <button
+                            class="col-start-6 row-start-7 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="F4">F4</button>
+                        <div
+                            class="row-start-8 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            G</div>
+                        <button
+                            class="row-start-8 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="G1">G1</button>
+                        <button
+                            class="row-start-8 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="G2">G2</button>
+                        <button
+                            class="col-start-5 row-start-8 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="G3">G3</button>
+                        <button
+                            class="col-start-6 row-start-8 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="G4">G4</button>
+                        <div
+                            class="row-start-9 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            H</div>
+                        <button
+                            class="row-start-9 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="H1">H1</button>
+                        <button
+                            class="row-start-9 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="H2">H2</button>
+                        <button
+                            class="col-start-5 row-start-9 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="H3">H3</button>
+                        <button
+                            class="col-start-6 row-start-9 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="H4">H4</button>
+                        <div
+                            class="row-start-10 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            I</div>
+                        <button
+                            class="row-start-10 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="I1">I1</button>
+                        <button
+                            class="row-start-10 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="I2">I2</button>
+                        <button
+                            class="col-start-5 row-start-10 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="I3">I3</button>
+                        <button
+                            class="col-start-6 row-start-10 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="I4">I4</button>
+                        <div
+                            class="row-start-11 w-[50px] text-center p-4 bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]">
+                            J</div>
+                        <button
+                            class="row-start-11 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="J1">J1</button>
+                        <button
+                            class="row-start-11 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="J2">J2</button>
+                        <button
+                            class="col-start-5 row-start-11 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="J3">J3</button>
+                        <button
+                            class="col-start-6 row-start-11 p-4 text-center bg-[#F7F8F8] font-medium text-lg font-inter rounded-xl text-[#03071280]"
+                            id="J4">J4</button>
+                    </div>
+
+                </div>
+                <img src="./images/line.svg" alt="">
+
+
+                <div class="w-[40%] p-8">
+                    <p class="text-2xl font-semibold pb-6 border-b-2 border-dashed">Select Your Seat</p>
+
+                    <div class="bg-[#F7F8F8] p-8 mt-4 rounded-xl">
+                        <div class="flex justify-between pt-4 pb-4 border-b-2 border-dashed">
+                            <p class="font-inter text-base font-medium font-default">Seat <span
+                                    class="bg-green text-white font-bold rounded-xl px-2">0</span></p>
+                            <p class="font-inter text-base font-medium font-default relative -left-5">Class</p>
+                            <p class="font-inter text-base font-medium font-default">Price</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between pt-4 pb-4">
+                                <p class="font-inter text-base font-default text-[#03071299]">C2</p>
+                                <p class="font-inter text-base font-default text-[#03071299]">Economoy</p>
+                                <p class="font-inter text-base font-default text-[#03071299]">550</p>
+                            </div>
+                            <div class="flex justify-between pb-4 border-b-2">
+                                <p class="font-inter text-base font-default text-[#03071299]">C2</p>
+                                <p class="font-inter text-base font-default text-[#03071299]">Economoy</p>
+                                <p class="font-inter text-base font-default text-[#03071299]">550</p>
+                            </div>
+                            <div class="flex justify-between py-4">
+                                <p class="font-base font-default font-medium font-inter">Total Price</p>
+                                <p class="font-base font-default font-medium font-inter">BDT <span>1100</span></p>
+                            </div>
+                            <div>
+                                <label class="flex items-center gap-2 relative">
+                                    <input type="text" class="w-full p-5 outline-none rounded-xl"
+                                        placeholder="Have any copupon?" />
+                                    <button
+                                        class="btn bg-green font-inter font-semibold text-white m-2 absolute right-0 p-">Apply</button>
+                                </label>
+                            </div>
+                            <div class="flex justify-between py-4">
+                                <p class="font-base font-default font-medium font-inter">Grand Price</p>
+                                <p class="font-base font-default font-medium font-inter">BDT <span>1100</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full mt-6">
+                            <label class="w-full font-semibold font-default font-inter" for="PassengerName">Passenger
+                                Name*</label> <br>
+                            <input class="w-full rounded-xl p-6 outline-none border mt-4" id="PassengerName" type="text"
+                                placeholder="Enter your name">
+                        </div>
+                        <div class="w-full mt-6">
+                            <label class="w-full font-semibold font-default font-inter" for="PassengerName">Phone
+                                Number*</label> <br>
+                            <input class="w-full rounded-xl p-6 outline-none border mt-4" id="PassengerName" type="text"
+                                placeholder="Enter your phone number">
+                        </div>
+                        <div class="w-full mt-6 mb-6">
+                            <label class="w-full font-semibold font-default font-inter" for="PassengerName">Email
+                                ID</label> <br>
+                            <input class="w-full rounded-xl p-6 outline-none border mt-4" id="PassengerName"
+                                type="email" placeholder="Enter your email id" required>
+                        </div>
+                        <button
+                            class="btn bg-green text-xl font-extrabold text-white font-raleway rounded-2xl w-full p-5 h-auto">Next</button>
+                    </div>
+                    <div class="flex justify-around mt-6">
+                        <a class="font-inter underline text-[#03071299]" href="#">Terms and Conditions</a>
+                        <a class="font-inter underline text-[#03071299]" href="#">Cancellation Policy</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-black py-28">
+        <div class="container mx-auto flex justify-between pb-12 border-b-2 border-dashed border-[#FFFFFF4D]">
+            <div>
+                <h1 class="text-white text-4xl font-extrabold pb-4">P-Ticket</h1>
+                <p class="text-[#FFFFFFCC] text-lg font-inter lg:leading-[30px] lg:w-3/4">P-Ticket is a digital platform to make your daily commuting better.</p>
+            </div>
+            <div>
+                <h1 class="text-white text-xl font-semibold pb-4">Download our app</h1>
+                <img class="cursor-pointer" src="./images/playstore.png" alt="">
+            </div>
+        </div>
+<div class="container mx-auto">
+    <div class="lg:pt-12 flex justify-between">
+        <p class="font-inter text-[#FFFFFFB2]">@all rights reserved, P-Ticket services limited.2024</p>
+        <div class="flex gap-8">
+            <p class="text-white font-inter font-medium">Terms & condition</p>
+            <p class="text-white font-inter font-medium">Return & refund policy</p>
+            <p class="text-white font-inter font-medium">Privacy policy</p>
+        </div>
+    </div>
+</div>
+    </footer>
+
+    <!-- Custom Javascript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
