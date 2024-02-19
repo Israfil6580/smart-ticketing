@@ -110,15 +110,11 @@ document.getElementById('busSeat').addEventListener('click', function (event) {
     
 const inputField = document.getElementById('PassengerNumber');
     
-// Add an event listener to listen for changes in the input field
 inputField.addEventListener('keyup', function(event) {
-    // Retrieve the value of the input field
     const inputValue = event.target.value;
 
-    // Convert the input value to a number
     const numberValue = parseFloat(inputValue);
 
-    // Check if the converted value is a number
     if (!isNaN(numberValue)) {
         submitButton.removeAttribute('disabled',true)
     } else {
@@ -129,15 +125,8 @@ inputField.addEventListener('keyup', function(event) {
 
 
 
-submitButton.addEventListener('click', function () {
-    let inputValue = passengerNumber.value;
-    let number = parseFloat(inputValue);
-
-    if (isNaN(number)) {
-        pleaseProvideNumber.classList.remove('hidden');
-    } else {
-        pleaseProvideNumber.classList.add('hidden');
-    }
+submitButton.addEventListener('click', function (event) {
+    event.preventDefault();
     confirmationInfo.classList.remove('hidden')
 });
 
