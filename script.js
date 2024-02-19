@@ -18,8 +18,8 @@ let submitButton = document.getElementById('submit-button')
 let alerts = document.getElementById('alerts')
 let confirmationInfo = document.getElementById('confirmation-info')
 let continueButton = document.getElementById('Continue-button')
-
 let i = 0;
+
 
 document.getElementById('busSeat').addEventListener('click', function (event) {
     if (event.target.id === 'busSeat') {
@@ -43,11 +43,10 @@ document.getElementById('busSeat').addEventListener('click', function (event) {
 
         let seatPositions = div.querySelector('#seat-positions');
         seatPositions.innerText = event.target.innerText;
-
         seatDetailsParent.appendChild(div);
 
-        if (i > 4) {
-            alert("You can use coupon code 15% off 'NEW15' & 20% off 'Couple 20'")
+
+        if (i >= 4) {
             couponId.removeAttribute('disabled')
             couponButton.removeAttribute('disabled')
             discount.classList.remove('hidden')
@@ -77,10 +76,6 @@ document.getElementById('busSeat').addEventListener('click', function (event) {
                     alerts.classList.add('hidden')
                 }
             })
-
-        }
-        if(i>0){
-            submitButton.removeAttribute('disabled',true)
         }
 
     }
@@ -93,11 +88,13 @@ document.getElementById('busSeat').addEventListener('click', function (event) {
         totalInner = totalInner - 550;
         totalPrice.innerText = totalInner;
 
-        
+
+
 
         if (i <= 4) {
             couponId.setAttribute('disabled', true)
             couponButton.setAttribute('disabled', true)
+            discount.classList.add('hidden')
             grandPrice.innerText = 0;
             discountPrice.innerText = 0;
             couponMessege.classList.add('hidden')
@@ -108,6 +105,28 @@ document.getElementById('busSeat').addEventListener('click', function (event) {
     }
 
 })
+
+
+    
+const inputField = document.getElementById('PassengerNumber');
+    
+// Add an event listener to listen for changes in the input field
+inputField.addEventListener('keyup', function(event) {
+    // Retrieve the value of the input field
+    const inputValue = event.target.value;
+
+    // Convert the input value to a number
+    const numberValue = parseFloat(inputValue);
+
+    // Check if the converted value is a number
+    if (!isNaN(numberValue)) {
+        submitButton.removeAttribute('disabled',true)
+    } else {
+        submitButton.setAttribute('disabled',true)
+    }
+})
+
+
 
 
 submitButton.addEventListener('click', function () {
@@ -122,6 +141,7 @@ submitButton.addEventListener('click', function () {
     confirmationInfo.classList.remove('hidden')
 });
 
-continueButton.addEventListener('click',function(){
+
+continueButton.addEventListener('click', function () {
     window.location.reload();
 })

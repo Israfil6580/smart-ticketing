@@ -124,9 +124,7 @@
                 <h1 class="text-7xl font-extrabold lg:leading-[86px] text-white lg:pb-4">End-to-End Travel with <br>
                     <span class="text-green">PH Paribahan</span>
                 </h1>
-                <p class="text-lg font-inter lg:leading-[30px] text-white pb-8 lg:w-2/4 lg:mx-auto">Yes, you can run
-                    unit tests and view the results directly within the app. The integrated testing features allow for a
-                    streamlined .</p>
+                <p class="text-lg font-inter lg:leading-[30px] text-white pb-8 lg:w-2/4 lg:mx-auto">Bus travelers primarily rely on buses for transportation, whether for short-distance commuting within a city or for long-distance travel between cities or regions.</p>
                 <a href="#buy-tickets"
                     class="btn bg-green font-bold text-xl font-default border-[#1DD100] h-auto px-5 py-4 border-none">Buy
                     Tickets</a>
@@ -216,8 +214,7 @@
             <div class="container mx-auto pt-32 pb-6">
                 <h1 class="text-[40px] font-bold font-default text-center lg:pb-6">P.H Paribahan</h1>
                 <p class="font-inter text-lg text-[#03071299] lg:leading-[30px] lg:pb-12 text-center lg:w-2/4 mx-auto">
-                    Yes, you can run unit tests and view the results directly within the app. The integrated testing
-                    features allow for a streamlined .</p>
+                    Buses are often considered a relatively affordable and accessible mode of transportation, making them popular among various segments of the population</p>
 
                 <div class="flex bg-white justify-around rounded-3xl">
                     <div class="lg:w-3/4 p-8">
@@ -491,7 +488,9 @@
                                         class="btn bg-green font-inter font-semibold text-white m-2 absolute right-0"
                                         id="Coupon-button" disabled>Apply</button>
                                 </label>
-                                <p class="px-5 py-3 hidden" id="coupon-messege">Invalid Coupon</p>
+                                <div id="coupon-messege" role="alert" class="alert alert-error hidden mt-1">
+                                    <span class="text-white">Invalid Coupon...</span>
+                                </div>
 
                                 <div id="alerts" role="alert" class="alert alert-warning hidden mt-1">
                                     <span class="text-white">Coupon added successfully...</span>
@@ -515,7 +514,7 @@
                             <label class="w-full font-semibold font-default font-inter" for="PassengerNumber">Phone
                                 Number*</label> <br>
                             <input class="w-full rounded-xl p-6 outline-none border mt-4" id="PassengerNumber"
-                                type="text" placeholder="Enter your phone number">
+                                type="text" placeholder="Enter your phone number" required>
                             <p id="Please-provide-number" class="px-5 py-3">Must be Provide Number</p>
                         </div>
                         <div class="w-full mt-6 mb-6">
@@ -585,7 +584,6 @@
 
 
     <!-- success alert -->
-
 
     <!-- Custom Javascript -->
     <script src="./script.js"></script>
